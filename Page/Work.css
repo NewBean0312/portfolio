@@ -1,0 +1,245 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* workSection_start */
+.workSection {
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 12%;
+}
+
+.workSection > .workBox {
+  flex: 1;
+}
+
+.workSection > .workShow {
+  flex: 1.2;
+  background-color: white;
+  border: 5px solid #6a3b28;
+}
+
+.workSection .workTitle {
+  color: #6a3b28;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.workSection .sliderBox {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* lpBox_start */
+.workSection .lpBox {
+  width: 230px;
+  height: 230px;
+  margin-top: 50px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.workSection .lpBox > .main {
+  position: relative;
+}
+
+.workSection .lpBox > .main .slide-show {
+  height: 250px;
+  transform: translateX(-50%);
+}
+
+.workSection .lpBox > .main .slide-show img {
+  width: 100%;
+  height: 230px;
+  border-radius: 50%;
+  transition: 0.5s transform;
+}
+
+.workSection .lpBox > .main .slide-show .lpRecord:hover > img {
+  transform: translateX(60px);
+}
+
+.workSection .lpBox .arrows > .btn-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(400%);
+  right: calc(80%);
+  font-size: 2rem;
+  color: #6a3b28;
+}
+
+.workSection .lpBox .arrows > .btn-arrow:active {
+  transform: translateY(410%);
+}
+
+.workSection .lpBox .arrows > .btn-arrow.btn-arrow-right {
+  left: calc(80%);
+  right: auto;
+}
+/* lpBox_end */
+
+/* lpListBox_start */
+.workSection .sliderBox > .lpListBox {
+  z-index: 1;
+  position: absolute;
+  right: 100px;
+  transform: scale(110%);
+  border-radius: 0;
+}
+
+.workSection .lpListBox > .lpBox .slide-show img {
+  border-radius: 0;
+  width: 95%;
+  height: 220px;
+  border: 5px solid black;
+}
+
+.workSection .sliderBox .lpListButton button:hover {
+  transform: translateY(-5px);
+}
+
+/* lpListBox_end */
+
+/* workShow_start */
+.workSection .workShow > .showBox {
+  width: 800px;
+  height: 400px;
+}
+
+.workSection .workShow > .showBox .slide-show {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin-top: 70px;
+  display: flex;
+}
+
+.workSection .workShow > .showBox > .main > .slide-show img {
+  width: 100%;
+  height: 400px;
+}
+
+.workSection .workShow > .showBox .slide-show button {
+  color: white;
+  background-color: #404040;
+  border: 0;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.workSection .workShow > .showBox > .main > .slide-show button:hover {
+  transform: translateY(-5px);
+}
+
+.workSection .workShow > .showBox .slide-show .mobilePlayButton {
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin: 0 21%;
+  background-color: #f6f0e1;
+  color: #6a3b28;
+  font-size: 2rem;
+}
+
+.workSection .workShow .showBox p {
+  font-family: 'Noto Serif KR', serif;
+  color: black;
+  display: inline;
+  height: 100px;
+  margin-left: 80px;
+  /* margin-top: 30px; */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* workShow_end */
+/* workSection_end */
+
+/* media */
+@media screen and (max-aspect-ratio: 11/6) {
+  .workSection .sliderBox > .lpListBox {
+    left: 50%;
+    right: 50%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/6) {
+  .workShow {
+    width: 50%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 7/6) {
+  .workSection {
+    flex-direction: column;
+  }
+
+  .workShow {
+    width: 100%;
+  }
+
+  .workSection > .workBox {
+    height: 500px;
+  }
+
+  .workSection .sliderBox {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-aspect-ratio: 5/6) {
+  .workSection > .workBox {
+    height: 300px;
+  }
+
+  .workSection > .workShow {
+    width: 80%;
+    background-color: #f6f0e1;
+    border: 0;
+  }
+
+  .workSection .workShow > .showBox > .main > .slide-show img {
+    display: none;
+  }
+
+  .workSection .workShow > .showBox .slide-show button {
+    display: none;
+  }
+
+  .workSection .workShow > .showBox .slide-show .mobilePlayButton {
+    display: block;
+  }
+
+  .workSection .workShow > .showBox > .main > .slide-show button:hover {
+    transform: translateY(5px);
+  }
+
+  .workSection .workShow > .showBox .slide-show p {
+    display: block;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #6a3b28;
+  }
+}
