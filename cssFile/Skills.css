@@ -1,0 +1,236 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+  user-select:none;
+  cursor: none;
+}
+
+body {
+  background-color: #453630;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* mouseCursor_start */
+.mouseCursor {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  color: #9b7e4b;
+  transform: translate(-50%, -50%);
+}
+
+.mouseCursor > i {
+  font-size: 30px;
+}
+/* mouseCursor_end */
+
+.skillsSection {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 17%;
+}
+
+/* skillsHeader_start */
+.skillsSection > .skillsHeader {
+  width: 35%;
+  height: 50px;
+  text-align: center;
+  color: #9b7e4b;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #9b7e4b;
+}
+
+.skillsSection > .skillsHeader > div {
+  width: 100%;
+  height: 4px;
+  border-bottom: 3px solid #9b7e4b;
+}
+/* skillsHeader_end */
+
+/* skillsArticle_start */
+.skillsSection .skillsArticle {
+  width: 95%;
+  height: 100%;
+}
+
+.skillsSection .skillsArticle > .noteBox {
+  display: flex;
+  width: 95%;
+  height: 160px;
+  border-top: 2px solid #9b7e4b;
+  margin-top: 3.5%;
+}
+
+.skillsSection .skillsArticle > .noteBox > .noteBoxRow {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-right: 7px solid #9b7e4b;
+}
+
+.skillsSection .skillsArticle > .noteBox .noteBoxCol {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  border-bottom: 2px solid #9b7e4b;
+}
+
+.skillsSection .skillsArticle > .noteBox .noteBoxTitle {
+  color: #9b7e4b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transform: translateY(-25px);
+}
+
+.skillsSection .skillsArticle > .noteBox .percent100 {
+  position: absolute;
+  color: #9b7e4b;
+  font-size: 0.8rem;
+  font-weight: bold;
+  top: -9px;
+  left: -37px;
+}
+
+.skillsSection .skillsArticle > .noteBox .percent0 {
+  position: absolute;
+  color: #9b7e4b;
+  font-size: 0.8rem;
+  font-weight: bold;
+  bottom: -8px;
+  left: -33px;
+}
+
+.skillsSection .skillsArticle > .noteBox .imgIcon {
+  z-index: 1;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.skillsSection .skillsArticle > .noteBox .imgIcon > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* img_percent_start */ 
+.skillsSection .skillsArticle > .noteBox .htmlPercent {
+  left: 10%;
+  top: -12px;
+}
+
+.skillsSection .skillsArticle > .noteBox .cssPercent {
+  left: 40%;
+  top: -12px;
+}
+
+.skillsSection .skillsArticle > .noteBox .jsPercent {
+  left: 75%;
+  top: 8px;
+}
+
+.skillsSection .skillsArticle > .noteBox .reactPercent {
+  left: 10%;
+  top: 17px;
+}
+
+.skillsSection .skillsArticle > .noteBox .dbmsPercent {
+  left: 10%;
+  top: -6px;
+}
+
+.skillsSection .skillsArticle > .noteBox .linuxPercent {
+  left: 75%;
+  top: 40px;
+}
+
+.skillsSection .skillsArticle > .noteBox .gitPercent {
+  left: 10%;
+  top: 12px;
+}
+
+.skillsSection .skillsArticle > .noteBox .githubPercent {
+  left: 75%;
+  top: 12px;
+}
+
+.skillsSection .skillsArticle > .noteBox .rPercent {
+  left: 10%;
+  top: 75px;
+}
+/* img_percent_end */ 
+
+.skillsSection .skillsArticle > .noteBox > .noteLastLine {
+  position: relative;
+  border-right: 10px solid #9b7e4b;
+}
+
+.skillsSection .skillsArticle > .noteBox .noteLine {
+  position: absolute;
+  height: 160px;
+  right: 6%;
+  border-right: 6px solid #9b7e4b;
+}
+/* skillsArticle_end */
+
+/* media */
+/* noteBox_start */
+@media screen and (max-aspect-ratio: 5/6) {
+  .skillsSection .skillsArticle > .noteBox {
+    width: 85%;
+  }
+
+  .skillsSection .skillsArticle .noteBoxRow:nth-child(4) {
+    display: none;
+  }
+
+  .skillsSection .skillsArticle .noteBoxRow:nth-child(5) {
+    display: none;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .noteLine {
+    right: 12%;
+    border-right: 4px solid #404040;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .noteBoxTitle {
+    font-size: 0.8rem;
+    transform: translateY(-17px);
+  }
+
+  .skillsSection .skillsArticle > .noteBox .imgIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .jsPercent {
+    left: 110%;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .reactPercent {
+    left: 60%;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .linuxPercent {
+    left: 110%;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .githubPercent {
+    left: 110%;
+  }
+
+  .skillsSection .skillsArticle > .noteBox .rPercent {
+    left: 60%;
+  }
+}
+/* noteBox_end */

@@ -1,0 +1,473 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+  cursor: none;
+}
+
+body {
+  background-color: #453630;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* header_start */
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+header > .logo {
+  flex: 1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+header > .logo > img {
+  width: 45px;
+  height: 45px;
+}
+
+header > .titleText {
+  flex: 4;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+header > .titleText h1 {
+  z-index: 10;
+  text-align: center;
+  color: #9b7e4b;
+  font-size: 4rem;
+  user-select: none;
+}
+
+header > .headerFun {
+  flex: 1;
+}
+/* header_end */
+
+.mainText {
+  color: #9b7e4b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  border-right: 0.05em solid black;
+}
+
+/* snowBox_start */
+#snowBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0px solid #fff;
+  overflow: hidden;
+}
+
+.snowflake {
+  height: 100%;
+  color: #9b7e4b85;
+  font-size: 1em;
+  font-family: Arial;
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 700px;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+  }
+}
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 700px;
+  }
+}
+@keyframes snowflakes-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  z-index: 1;
+  -webkit-user-select: none;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 15s, 5s, 5s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  user-select: none;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 15s, 5s, 5s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 4s, 0s;
+  animation-delay: 4s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 5%;
+  -webkit-animation-delay: 8s, 2s;
+  animation-delay: 8s, 2s;
+}
+.snowflake:nth-of-type(2) {
+  left: 10%;
+  -webkit-animation-delay: 9.5s, 0.5s;
+  animation-delay: 9.5s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 15%;
+  -webkit-animation-delay: 7s, 2s;
+  animation-delay: 7s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 20%;
+  -webkit-animation-delay: 0s, 3s;
+  animation-delay: 0s, 3s;
+}
+.snowflake:nth-of-type(5) {
+  left: 25%;
+  -webkit-animation-delay: 4.5s, 3s;
+  animation-delay: 4.5s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 30%;
+  -webkit-animation-delay: 9s, 2s;
+  animation-delay: 9s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 35%;
+  -webkit-animation-delay: 6s, 1s;
+  animation-delay: 6s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 40%;
+  -webkit-animation-delay: 12s, 1s;
+  animation-delay: 12s, 1s;
+}
+.snowflake:nth-of-type(9) {
+  left: 45%;
+  -webkit-animation-delay: 1s, 1.5s;
+  animation-delay: 1s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+  left: 50%;
+  -webkit-animation-delay: 4.5s, 0s;
+  animation-delay: 4.5s, 0s;
+}
+.snowflake:nth-of-type(11) {
+  left: 55%;
+  -webkit-animation-delay: 5s, 1s;
+  animation-delay: 5s, 1s;
+}
+.snowflake:nth-of-type(12) {
+  left: 60%;
+  -webkit-animation-delay: 2s, 0.5s;
+  animation-delay: 2s, 0.5s;
+}
+.snowflake:nth-of-type(13) {
+  left: 65%;
+  -webkit-animation-delay: 6.5s, 3s;
+  animation-delay: 6.5s, 3s;
+}
+.snowflake:nth-of-type(14) {
+  left: 70%;
+  -webkit-animation-delay: 10s, 2s;
+  animation-delay: 10s, 2s;
+}
+.snowflake:nth-of-type(15) {
+  left: 75%;
+  -webkit-animation-delay: 5.5s, 5s;
+  animation-delay: 5.5s, 5s;
+}cursor
+.snowflake:nth-of-type(16) {
+  left: 80%;
+  -webkit-animation-delay: 2.5s, 2s;
+  animation-delay: 2.5s, 2s;
+}
+.snowflake:nth-of-type(17) {
+  left: 85%;
+  -webkit-animation-delay: 3s, 2.5s;
+  animation-delay: 3s, 2.5s;
+}
+.snowflake:nth-of-type(18) {
+  left: 90%;
+  -webkit-animation-delay: 11s, 4.5s;
+  animation-delay: 11s, 4.5s;
+}
+.snowflake:nth-of-type(19) {
+  left: 90%;
+  -webkit-animation-delay: 4s, 1.5s;
+  animation-delay: 4s, 1.5s;
+}
+.snowflake:nth-of-type(20) {
+  left: 90%;
+  -webkit-animation-delay: 1.5s, 3.5s;
+  animation-delay: 1.5s, 3.5s;
+}
+/* snowBox_end */
+
+/* mouseCursor_start */
+.mouseCursor {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  color: #9b7e4b;
+  transform: translate(-50%, -50%);
+}
+
+.mouseCursor > i {
+  font-size: 30px;
+}
+/* mouseCursor_end */
+
+/* navBar_start */
+.navBar {
+  border: 3px solid #453630;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  transition: height 0.5s;
+}
+
+.navBar > .boxGroup {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.navBar .whiteBox {
+  position: relative;
+  flex: 1;
+  border: 4px solid #453630;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f2ec;
+}
+
+/* navBar_blackBox_start */
+.navBar .blackBox {
+  position: absolute;
+  width: 9%;
+  height: 50%;
+  background-color: #453630;
+  top: 1;
+}
+
+.navBar .blackBox:nth-child(8) {
+  left: 9.97%;
+}
+
+.navBar .blackBox:nth-child(9) {
+  left: 23.9%;
+}
+
+.navBar .blackBox:nth-child(10) {
+  left: 52.5%;
+}
+
+.navBar .blackBox:nth-child(11) {
+  left: 66.8%;
+}
+
+.navBar .blackBox:nth-child(12) {
+  left: 80.8%;
+}
+/* navBar_blackBox_end */
+
+/* navBar_animation_start */
+.navBar .animation {
+  position: absolute;
+  top: -45px;
+  width: 40px;
+  height: 40px;
+  color: #453630;
+  visibility: hidden;
+  transition: color 0.2s, transform 2s;
+}
+
+.navBar .mobileAni {
+  display: none;
+}
+
+.navBar .whiteBox:hover {
+  background: linear-gradient(to bottom, #f4f2ec, #dedede);
+}
+
+.navBar .whiteBox:hover > .animation {
+  visibility: visible;
+  transform: translateY(-50px);
+  color: #9b7e4b;
+}
+
+.navBar .animation {
+  font-size: 200%;
+}
+
+/* navBar_button_start */
+.navBar .whiteBox > button {
+  position: absolute;
+  bottom: 5px;
+  left: 3%;
+  width: 95%;
+  height: 47px;
+  margin: 0 auto;
+  border: 1px solid #f4f2ec;
+  border-radius: 50%;
+  background-color: #453630;
+  transition: background-color 0.3s;
+}
+
+.navBar .whiteBox > button > i {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #f4f2ec;
+}
+
+.navBar .whiteBox > button:hover {
+  background-color: #dedede;
+  border: 0.5px solid #dedede;
+}
+
+.navBar .whiteBox > button:hover > i {
+  color: #9b7e4b;
+  transition: color 0.3s;
+}
+
+.navBar .buttonText {
+  width: 90%;
+  position: absolute;
+  left: -1px;
+  top: -220px;
+  color: #453630;
+  font-size: 150%;
+  font-weight: bold;
+  visibility: hidden;
+  user-select: none;
+  user-select: none;
+  transition: color 0.3s, visibility 0.5s, transform 0.5s;
+}
+
+.navBar .whiteBox > button:hover .buttonText {
+  justify-content: center;
+  visibility: visible;
+  transform: translateY(-30px);
+  color: #9b7e4b;
+}
+
+.navBar .mobileButton {
+  display: none;
+}
+
+.navBar .mobileButton a {
+  text-decoration: none;
+  color: #9b7e4b;
+}
+
+.navBar .buttonText div {
+  font-size: 0.3rem;
+}
+/* navBar_button_end */
+/* navBar_end */
+
+/* media */
+/* navBar_start */
+@media screen and (max-aspect-ratio: 11/6) {
+  .navBar > .boxGroup:nth-child(1) {
+    display: none;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/6) {
+  .navBar > .boxGroup:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-aspect-ratio: 7/6) {
+  .navBar > .boxGroup:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-aspect-ratio: 5/6) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  header > .titleText h1 {
+    font-size: 2rem;
+  }
+
+  .navBar > .boxGroup:nth-child(3) {
+    display: none;
+  }
+
+  .navBar .whiteBox > button {
+    border-radius: 25px;
+    display: none;
+  }
+
+  .navBar .mobileAni {
+    display: block;
+  }
+
+  .navBar .buttonText {
+    top: -190px;
+  }
+
+  .navBar .whiteBox > .mobileAniHidden {
+    display: none;
+  }
+
+  .navBar .whiteBox .mobileButton {
+    display: block;
+  }
+
+  .navBar .whiteBox > button > i {
+    font-size: 2rem;
+  }
+}
+/* navBar_end */

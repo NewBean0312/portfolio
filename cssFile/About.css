@@ -1,0 +1,123 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+  user-select:none;
+  cursor: none;
+}
+
+body {
+  background-color: #453630;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* mouseCursor_start */
+.mouseCursor {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  color: #9b7e4b;
+  transform: translate(-50%, -50%);
+}
+
+.mouseCursor > i {
+  font-size: 30px;
+}
+/* mouseCursor_end */
+
+/* aboutBox_start */
+.aboutBox {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 900px;
+  margin-left: 25%;
+}
+
+/* aboutHeader_start */
+.aboutBox .aboutHeader {
+  flex: 1;
+  width: 100%;
+}
+
+.aboutBox .aboutHeader > h1 {
+  color: #9b7e4b;
+  font-size: 3rem;
+  margin: 20px 20px;
+}
+/* aboutHeader_end */
+
+/* aboutArticle_start */
+.aboutBox .aboutArticle {
+  flex: 6;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.aboutBox .aboutArticle > p {
+  font-family: "Noto Serif KR", serif;
+  color: #bda486;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.aboutBox .aboutArticle > p > span {
+  font-family: "Noto Serif KR", serif;
+  color: #9b7e4b;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+/* aboutArticle_end */
+/* aboutBox_end */
+
+/* media */
+@media screen and (max-aspect-ratio: 11/6) {
+  .aboutBox {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/6) {
+  .aboutBox {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 7/6) {
+  .aboutBox {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 5/6) {
+  body {
+    overflow-y: hidden;
+  }
+  .aboutBox {
+    margin-left: 0;
+    left: 46%;
+  }
+
+  .aboutBox .aboutArticle > p {
+    font-size: 0.78rem;
+    line-height: 25px;
+  }
+
+  .aboutBox .aboutArticle > p > span {
+    font-size: 0.8rem;
+  }
+}
