@@ -1,10 +1,10 @@
-/* Normalize_start */
+/* normalizeArea */
 * {
-  margin: 0 auto;
-  padding: 0 auto;
   font-family: "Libre Baskerville", serif;
-  user-select:none;
+  user-select: none;
   cursor: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -13,10 +13,53 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
+  /* 화면 전환 CSS */
+  animation: fadein 2000ms ease-out;
+  -moz-animation: fadein 2000ms ease-out; /* Firefox */
+  -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+  -o-animation: fadein 2000ms ease-out; /* Opera */
 }
-/* Normalize_end */
 
-/* mouseCursor_start */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -30,94 +73,302 @@ body {
 .mouseCursor > i {
   font-size: 30px;
 }
-/* mouseCursor_end */
 
-/* aboutBox_start */
+/* mobileScreenMedia */
+/* aboutBoxArea */
 .aboutBox {
   z-index: -1;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 12%;
   width: 100%;
-  height: 900px;
-  margin-left: 25%;
+  height: 88%;
 }
 
-/* aboutHeader_start */
-.aboutBox .aboutHeader {
-  flex: 1;
-  width: 100%;
-}
-
-.aboutBox .aboutHeader > h1 {
+/* aboutHeaderArea */
+.aboutHeader {
+  text-align: center;
   color: #9b7e4b;
-  font-size: 3rem;
-  margin: 20px 20px;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
-/* aboutHeader_end */
 
-/* aboutArticle_start */
-.aboutBox .aboutArticle {
-  flex: 6;
+/* aboutContainerArea */
+.aboutBox .aboutContainer {
   width: 100%;
-  margin: 0 20px;
+  height: 700px;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.aboutBox .aboutArticle > p {
+/* aboutShowArea */
+.aboutContainer .aboutShow {
+  width: 100%;
+  height: 50%;
+  background: url("../img/imgBoxBoard.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.aboutShow::before {
+  /* aboutSHow의 배경화면에 투명도를 주기 위한 CSS */
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
+}
+
+.aboutShow > div {
+  position: absolute;
+  width: 400px;
+  display: none;
+}
+
+.aboutShow #imgBox1,
+#imgBox2,
+#imgBox3,
+#imgBox4,
+#imgBox5,
+#imgBox6,
+#imgBox7 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.aboutShow img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* aboutContentArea */
+.aboutContainer .aboutContent {
+  width: 100%;
+  height: 50%;
+}
+
+.aboutContent > h4 {
+  color: #9b7e4b;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-left: 20px;
+  display: none;
+}
+
+.aboutContent > p {
+  margin-top: 0;
   font-family: "Noto Serif KR", serif;
   color: #bda486;
-  font-size: 1.1rem;
+  text-align: center;
+  font-size: 0.8rem;
   font-weight: bold;
   line-height: 35px;
 }
 
-.aboutBox .aboutArticle > p > span {
+.aboutContent span {
   font-family: "Noto Serif KR", serif;
   color: #9b7e4b;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-style: italic;
   text-decoration: underline;
 }
-/* aboutArticle_end */
-/* aboutBox_end */
 
-/* media */
-@media screen and (max-aspect-ratio: 11/6) {
-  .aboutBox {
-    margin-left: 20%;
-  }
+.aboutContent span:hover {
+  color: #ffce78;
 }
 
-@media screen and (max-aspect-ratio: 9/6) {
-  .aboutBox {
-    margin-left: 15%;
-  }
+.mobileSpace {
+  display: none;
 }
-
-@media screen and (max-aspect-ratio: 7/6) {
-  .aboutBox {
-    margin-left: 10%;
+/* tabletScreenMedia */
+@media all and (min-width: 768px) {
+  .aboutShow #imgBox1,
+  #imgBox2,
+  #imgBox3,
+  #imgBox4,
+  #imgBox5,
+  #imgBox6,
+  #imgBox7 {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
   }
-}
 
-@media screen and (max-aspect-ratio: 5/6) {
-  body {
-    overflow-y: hidden;
-  }
-  .aboutBox {
-    margin-left: 0;
-    left: 46%;
-  }
-
-  .aboutBox .aboutArticle > p {
-    font-size: 0.78rem;
+  .aboutContent p {
+    font-size: 1.1rem;
     line-height: 25px;
   }
 
-  .aboutBox .aboutArticle > p > span {
-    font-size: 0.8rem;
+  .aboutContent span {
+    font-size: 1.2rem;
+  }
+
+  .mobileSpace {
+    display: block;
+  }
+}
+
+/* pcScreenMedia */
+@media all and (min-width: 1024px) {
+  .aboutHeader {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .aboutBox .aboutContainer {
+    flex-direction: row;
+  }
+
+  .aboutContainer .aboutShow {
+    width: 40%;
+    height: 100%;
+  }
+
+  .aboutShow #imgBox1,
+  #imgBox2,
+  #imgBox3,
+  #imgBox4,
+  #imgBox5,
+  #imgBox6,
+  #imgBox7 {
+    width: 90%;
+  }
+
+  /* imgBox 위치 CSS */
+  .aboutShow #imgBox1 {
+    top: 40px;
+  }
+
+  .aboutShow #imgBox2 {
+    top: 80px;
+  }
+
+  .aboutShow #imgBox3 {
+    top: 160px;
+  }
+
+  .aboutShow #imgBox4 {
+    top: 200px;
+  }
+
+  .aboutShow #imgBox5 {
+    top: 240px;
+  }
+
+  .aboutShow #imgBox6 {
+    top: 300px;
+  }
+
+  .aboutShow #imgBox7 {
+    top: 350px;
+  }
+
+  .aboutShow img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .aboutContainer .aboutContent {
+    width: 60%;
+    height: 100%;
+  }
+
+  .aboutContent h4 {
+    display: block;
+  }
+
+  .aboutContent p {
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .aboutContent span {
+    margin-top: 60px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 1.1rem;
+  }
+}
+/* lagePCScreenMedia */
+@media all and (min-width: 1440px) {
+  .aboutContainer .aboutShow {
+    width: 45%;
+  }
+
+  /* imgBox 위치 CSS */
+  .aboutShow #imgBox1,
+  #imgBox2,
+  #imgBox3,
+  #imgBox4,
+  #imgBox5,
+  #imgBox6,
+  #imgBox7 {
+    position: absolute;
+  }
+
+  .aboutShow #imgBox1 {
+    top: 40px;
+    left: 4%;
+    width: 400px;
+  }
+
+  .aboutShow #imgBox2 {
+    top: 80px;
+    left: 50%;
+    width: 300px;
+  }
+
+  .aboutShow #imgBox3 {
+    top: 160px;
+    left: 11%;
+    width: 350px;
+  }
+
+  .aboutShow #imgBox4 {
+    top: 200px;
+    left: 30%;
+    width: 400px;
+  }
+
+  .aboutShow #imgBox5 {
+    top: 240px;
+    left: 17%;
+    width: 400px;
+  }
+
+  .aboutShow #imgBox6 {
+    top: 300px;
+    left: 42%;
+    width: 350px;
+  }
+
+  .aboutShow #imgBox7 {
+    top: 350px;
+    left: 32%;
+    width: 350px;
+  }
+
+  .aboutContainer .aboutContent {
+    width: 55%;
+  }
+
+  .aboutContent > p {
+    font-size: 1.4rem;
+    line-height: 40px;
+  }
+
+  .aboutContent span {
+    font-size: 1.5rem;
   }
 }

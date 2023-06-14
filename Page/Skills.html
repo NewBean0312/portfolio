@@ -33,13 +33,11 @@
     <title>YuBeen's Portfolio</title>
   </head>
   <body>
-    <!-- cursor_Start -->
+    <!-- cursorArea -->
     <div class="mouseCursor">
       <i class="fa-solid fa-arrow-pointer"></i>
     </div>
-    <!-- cursor_End -->
-
-    <!-- navBar start -->
+    <!-- navBarArea -->
     <nav class="navBar">
       <div class="boxGroup">
         <div class="whiteBox"></div>
@@ -74,15 +72,15 @@
         <div class="whiteBox"></div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button type="button" onClick="location.href='../index.html'">
-            <div class="buttonText">Main</div>
+          <button class="pcBtn" onClick="location.href='../index.html'">
+            <div class="btnText">main</div>
             <i class="fa-solid fa-m"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button type="button" onClick="location.href='./About.html'">
-            <div class="buttonText">About</div>
+          <button class="pcBtn" onClick="location.href='./about.html'">
+            <div class="btnText">about</div>
             <i class="fa-solid fa-a"></i>
           </button>
         </div>
@@ -95,81 +93,51 @@
       </div>
       <div class="boxGroup">
         <div class="whiteBox">
-          <button type="button" onClick="location.href='./Carrer.html'">
-            <div class="buttonText carrerFont">Carrer</div>
+          <button class="pcBtn" onClick="location.href='./carrer.html'">
+            <div class="btnText">carrer</div>
             <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileButton 실행 -->
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='../index.html'"
-          >
-            <div class="buttonText">Main</div>
-            <i class="fa-brands fa-itunes-note"></i>
+          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileBtn 실행 -->
+          <button class="mobileBtn" onClick="location.href='../index.html'">
+            <div class="mobileBtnText">main</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./About.html'"
-          >
-            <div class="buttonText">About</div>
-            <i class="fa-solid fa-a"></i>
+          <button class="mobileBtn" onClick="location.href='./about.html'">
+            <div class="mobileBtnText">about</div>
           </button>
-          <button type="button" onClick="location.href='./Skills.html'">
-            <div class="buttonText">Skills</div>
+          <button class="pcBtn" onClick="location.href='./skills.html'">
+            <div class="btnText">skills</div>
             <i class="fa-solid fa-s"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Carrer.html'"
-          >
-            <div class="buttonText carrerFont">Carrer</div>
-            <i class="fa-solid fa-c"></i>
+          <button class="mobileBtn" onClick="location.href='./carrer.html'">
+            <div class="mobileBtnText">carrer</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Skills.html'"
-          >
-            <div class="buttonText">Skills</div>
-            <i class="fa-solid fa-s"></i>
+          <button class="mobileBtn" onClick="location.href='./skills.html'">
+            <div class="mobileBtnText">skills</div>
           </button>
-          <button type="button" onClick="location.href='./Work.html'">
-            <div class="buttonText">Work</div>
+          <button class="pcBtn" onClick="location.href='./work.html'">
+            <div class="btnText">work</div>
             <i class="fa-solid fa-w"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Work.html'"
-          >
-            <div class="buttonText">Work</div>
-            <i class="fa-solid fa-w"></i>
+          <button class="mobileBtn" onClick="location.href='./work.html'">
+            <div class="mobileBtnText">work</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Link.html'"
-          >
-            <div class="buttonText">Link</div>
-            <i class="fa-solid fa-l"></i>
+          <button class="mobileBtn" onClick="location.href='./link.html'">
+            <div class="mobileBtnText">link</div>
           </button>
-          <button type="button" onClick="location.href='./Link.html'">
-            <div class="buttonText">Link</div>
+          <button class="pcBtn" onClick="location.href='./link.html'">
+            <div class="btnText">link</div>
             <i class="fa-solid fa-l"></i>
           </button>
         </div>
@@ -194,9 +162,7 @@
         <div class="blackBox"></div>
       </div>
     </nav>
-    <!-- navBar end -->
-
-    <!-- content_start -->
+    <!-- contentArea -->
     <section class="skillsSection">
       <header class="skillsHeader">
         <h1><i>Skills</i></h1>
@@ -207,23 +173,21 @@
           <div class="noteBoxRow">
             <div class="noteBoxCol">
               <div class="noteBoxTitle">Front-End</div>
-              <div class="percent100">High</div>
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol">
-              <div class="percent0">Low</div>
             </div>
           </div>
           <div class="noteBoxRow">
-            <div class="imgIcon htmlPercent">
-              <img src="../img/HTML_Image.png" alt="HTML_Image" />
+            <div class="imgIcon htmlIcon">
+              <img src="../img/iconFolder/htmlIcon.png" alt="htmlIcon_img" />
             </div>
-            <div class="imgIcon cssPercent">
-              <img src="../img/CSS_Image.png" alt="CSS_Image" />
+            <div class="imgIcon cssIcon">
+              <img src="../img/iconFolder/cssIcon.png" alt="cssIcon_img" />
             </div>
-            <div class="imgIcon jsPercent">
-              <img src="../img/JS_Image.png" alt="JS_Image" />
+            <div class="imgIcon jsIcon">
+              <img src="../img/iconFolder/jsIcon.png" alt="jsIcon_img" />
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
@@ -231,8 +195,8 @@
             <div class="noteBoxCol"></div>
           </div>
           <div class="noteBoxRow">
-            <div class="imgIcon reactPercent">
-              <img src="../img/React_Image.png" alt="React_Image" />
+            <div class="imgIcon reactIcon">
+              <img src="../img/iconFolder/reactIcon.png" alt="reactIcon_img" />
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
@@ -250,20 +214,18 @@
           <div class="noteBoxRow">
             <div class="noteBoxCol">
               <div class="noteBoxTitle">Back-End</div>
-              <div class="percent100">High</div>
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol">
-              <div class="percent0">Low</div>
             </div>
           </div>
           <div class="noteBoxRow">
-            <div class="imgIcon dbmsPercent">
-              <img src="../img/DBMS_Image.png" alt="DBMS_Image" />
+            <div class="imgIcon dbmsIcon">
+              <img src="../img/iconFolder/dbmsIcon.png" alt="dbmsIcon_img" />
             </div>
-            <div class="imgIcon linuxPercent">
-              <img src="../img/linux_Image.png" alt="linux_Image" />
+            <div class="imgIcon linuxIcon">
+              <img src="../img/iconFolder/linuxIcon.png" alt="linuxIcon_img" />
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
@@ -287,20 +249,18 @@
           <div class="noteBoxRow">
             <div class="noteBoxCol">
               <div class="noteBoxTitle">Etc.</div>
-              <div class="percent100">High</div>
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol">
-              <div class="percent0">Low</div>
             </div>
           </div>
           <div class="noteBoxRow">
-            <div class="imgIcon gitPercent">
-              <img src="../img/Git_Image.png" alt="Git_Image" />
+            <div class="imgIcon gitIcon">
+              <img src="../img/iconFolder/gitIcon.png" alt="gitIcon_img" />
             </div>
-            <div class="imgIcon githubPercent">
-              <img src="../img/github_Image.png" alt="Github_Image" />
+            <div class="imgIcon githubIcon">
+              <img src="../img/iconFolder/githubIcon.png" alt="githubIcon_img" />
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
@@ -308,8 +268,8 @@
             <div class="noteBoxCol"></div>
           </div>
           <div class="noteBoxRow">
-            <div class="imgIcon rPercent">
-              <img src="../img/R_Image.png" alt="R_Image" />
+            <div class="imgIcon rIcon">
+              <img src="../img/iconFolder/rIcon.png" alt="rIcon_img" />
             </div>
             <div class="noteBoxCol"></div>
             <div class="noteBoxCol"></div>
@@ -326,6 +286,5 @@
         </div>
       </article>
     </section>
-    <!-- content_end -->
   </body>
 </html>

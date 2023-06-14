@@ -1,8 +1,7 @@
-/* Normalize_start */
+/* normalizeArea */
 * {
-  margin: 0 auto;
-  padding: 0 auto;
-  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
   cursor: none;
 }
 
@@ -12,20 +11,66 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
+  /* 화면 전환 CSS */
+  animation: fadein 2000ms ease-out;
+  -moz-animation: fadein 2000ms ease-out; /* Firefox */
+  -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+  -o-animation: fadein 2000ms ease-out; /* Opera */
 }
-/* Normalize_end */
 
-/* header_start */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* headerArea */
 header {
-  width: 100%;
+  font-family: "Libre Baskerville", serif;
+  width: 80%;
+  margin: 0 auto;
   height: 150px;
   display: flex;
+  justify-content: center;
 }
 
 header > .logo {
-  flex: 1;
   display: flex;
-  justify-items: center;
+  flex-grow: 1;
+  justify-content: start;
   align-items: center;
 }
 
@@ -35,13 +80,13 @@ header > .logo > img {
 }
 
 header > .titleText {
-  flex: 4;
   display: flex;
+  flex-grow: 1;
   justify-items: center;
   align-items: center;
 }
 
-header > .titleText h1 {
+header > .titleText > h1 {
   z-index: 10;
   text-align: center;
   color: #9b7e4b;
@@ -49,12 +94,12 @@ header > .titleText h1 {
   user-select: none;
 }
 
-header > .headerFun {
-  flex: 1;
+header > .titleText h1 {
+  font-size: 2rem;
 }
-/* header_end */
 
 .mainText {
+  font-family: "Libre Baskerville", serif;
   color: #9b7e4b;
   font-size: 1.5rem;
   font-weight: bold;
@@ -63,7 +108,7 @@ header > .headerFun {
   border-right: 0.05em solid black;
 }
 
-/* snowBox_start */
+/* snowBoxArea */
 #snowBox {
   width: 100%;
   height: 100%;
@@ -90,6 +135,7 @@ header > .headerFun {
     top: 700px;
   }
 }
+
 @-webkit-keyframes snowflakes-shake {
   0%,
   100% {
@@ -108,6 +154,7 @@ header > .headerFun {
     top: 700px;
   }
 }
+
 @keyframes snowflakes-shake {
   0%,
   100% {
@@ -215,7 +262,7 @@ header > .headerFun {
   left: 75%;
   -webkit-animation-delay: 5.5s, 5s;
   animation-delay: 5.5s, 5s;
-}cursor
+}
 .snowflake:nth-of-type(16) {
   left: 80%;
   -webkit-animation-delay: 2.5s, 2s;
@@ -241,9 +288,8 @@ header > .headerFun {
   -webkit-animation-delay: 1.5s, 3.5s;
   animation-delay: 1.5s, 3.5s;
 }
-/* snowBox_end */
 
-/* mouseCursor_start */
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -257,9 +303,8 @@ header > .headerFun {
 .mouseCursor > i {
   font-size: 30px;
 }
-/* mouseCursor_end */
 
-/* navBar_start */
+/* navBarArea */
 .navBar {
   border: 3px solid #453630;
   position: absolute;
@@ -278,6 +323,15 @@ header > .headerFun {
   height: 100%;
 }
 
+/* 모바일 버전 메뉴바 축소를 위한 CSS */
+.navBar > .boxGroup:nth-child(1),
+.navBar > .boxGroup:nth-child(2),
+.navBar > .boxGroup:nth-child(3),
+.navBar > .boxGroup:nth-child(5) {
+  display: none;
+}
+
+/* navBar_whiteBoxArea */
 .navBar .whiteBox {
   position: relative;
   flex: 1;
@@ -287,7 +341,11 @@ header > .headerFun {
   background-color: #f4f2ec;
 }
 
-/* navBar_blackBox_start */
+.navBar .whiteBox:hover {
+  background: linear-gradient(to bottom, #dedede, #ababab);
+}
+
+/* navBar_blackBoxArea */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -296,79 +354,66 @@ header > .headerFun {
   top: 1;
 }
 
-.navBar .blackBox:nth-child(8) {
+/* blackBox 위치 지정 CSS */
+.blackBox:nth-child(8) {
   left: 9.97%;
 }
 
-.navBar .blackBox:nth-child(9) {
+.blackBox:nth-child(9) {
   left: 23.9%;
 }
 
-.navBar .blackBox:nth-child(10) {
+.blackBox:nth-child(10) {
   left: 52.5%;
 }
 
-.navBar .blackBox:nth-child(11) {
+.blackBox:nth-child(11) {
   left: 66.8%;
 }
 
-.navBar .blackBox:nth-child(12) {
+.blackBox:nth-child(12) {
   left: 80.8%;
 }
-/* navBar_blackBox_end */
 
-/* navBar_animation_start */
+/* navBarAnimationArea */
 .navBar .animation {
   position: absolute;
   top: -45px;
   width: 40px;
   height: 40px;
   color: #453630;
+  font-size: 200%;
   visibility: hidden;
   transition: color 0.2s, transform 2s;
 }
 
-.navBar .mobileAni {
-  display: none;
-}
-
-.navBar .whiteBox:hover {
-  background: linear-gradient(to bottom, #f4f2ec, #dedede);
-}
-
-.navBar .whiteBox:hover > .animation {
+.whiteBox:hover > .animation {
   visibility: visible;
   transform: translateY(-50px);
   color: #9b7e4b;
 }
 
-.navBar .animation {
-  font-size: 200%;
+.navBar .mobileAni {
+  display: block;
 }
 
-/* navBar_button_start */
+/* navBar_buttonArea */
 .navBar .whiteBox > button {
+  display: none;
   position: absolute;
   bottom: 5px;
   left: 3%;
   width: 95%;
-  height: 47px;
-  margin: 0 auto;
-  border: 1px solid #f4f2ec;
-  border-radius: 50%;
+  height: 40px;
+  border: none;
   background-color: #453630;
+  border-radius: 20px;
   transition: background-color 0.3s;
 }
 
-.navBar .whiteBox > button > i {
-  font-size: 1.3rem;
-  text-align: center;
-  color: #f4f2ec;
-}
-
 .navBar .whiteBox > button:hover {
-  background-color: #dedede;
-  border: 0.5px solid #dedede;
+  background-color: #ababab;
+  border: 0.5px solid #ababab;
 }
 
 .navBar .whiteBox > button:hover > i {
@@ -376,98 +421,101 @@ header > .headerFun {
   transition: color 0.3s;
 }
 
-.navBar .buttonText {
-  width: 90%;
+.navBar .btnText {
+  font-family: "Libre Baskerville", serif;
   position: absolute;
   left: -1px;
-  top: -220px;
+  top: -240px;
+  background-color: #453630;
   color: #453630;
-  font-size: 150%;
+  font-size: 1.5rem;
+  text-align: center;
   font-weight: bold;
+  font-style: italic;
   visibility: hidden;
   user-select: none;
-  user-select: none;
-  transition: color 0.3s, visibility 0.5s, transform 0.5s;
+  transition: color 0.3s, visibility 1s, transform 1s;
 }
 
-.navBar .whiteBox > button:hover .buttonText {
+.navBar .whiteBox > button:hover .btnText {
   justify-content: center;
   visibility: visible;
   transform: translateY(-30px);
   color: #9b7e4b;
 }
 
-.navBar .mobileButton {
-  display: none;
+/* mobileBtnArea */
+.navBar .whiteBox .mobileBtn {
+  display: block;
 }
 
-.navBar .mobileButton a {
-  text-decoration: none;
+.mobileBtn .mobileBtnText {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.mobileBtn:hover .mobileBtnText {
   color: #9b7e4b;
 }
 
-.navBar .buttonText div {
-  font-size: 0.3rem;
-}
-/* navBar_button_end */
-/* navBar_end */
-
-/* media */
-/* navBar_start */
-@media screen and (max-aspect-ratio: 11/6) {
-  .navBar > .boxGroup:nth-child(1) {
-    display: none;
-  }
+.navBar .whiteBox > .pcAniHidden {
+  display: block;
 }
 
-@media screen and (max-aspect-ratio: 9/6) {
-  .navBar > .boxGroup:nth-child(5) {
-    display: none;
-  }
-}
-
-@media screen and (max-aspect-ratio: 7/6) {
+@media all and (min-width: 768px) {
   .navBar > .boxGroup:nth-child(2) {
-    display: none;
+    display: flex;
+  }
+
+  
+}
+
+/* pcScreenMedia */
+@media all and (min-width: 1024px) {
+  .navBar .whiteBox > .mobileBtn {
+    height: 43px;
   }
 }
 
-@media screen and (max-aspect-ratio: 5/6) {
-  body {
-    -webkit-tap-highlight-color: transparent;
+/* lagePCScreenMedia */
+@media all and (min-width: 1440px) {
+  header > .titleText > h1 {
+    font-size: 4rem;
   }
 
-  header > .titleText h1 {
-    font-size: 2rem;
+  .navBar > .boxGroup:nth-child(1),
+  .navBar > .boxGroup:nth-child(5) {
+    display: flex;
   }
 
-  .navBar > .boxGroup:nth-child(3) {
+  .navBar > .boxGroup:nth-child(3),
+  .navBar > .boxGroup:nth-child(4) {
+    display: flex;
+  }
+
+  .navBar .whiteBox .mobileBtn {
     display: none;
   }
 
-  .navBar .whiteBox > button {
-    border-radius: 25px;
+  .navBar .whiteBox .pcBtn {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .navBar .whiteBox > .pcAniHidden {
     display: none;
+  }
+
+  .navBar .whiteBox > .pcBtn > i {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f4f2ec;
   }
 
   .navBar .mobileAni {
-    display: block;
-  }
-
-  .navBar .buttonText {
-    top: -190px;
-  }
-
-  .navBar .whiteBox > .mobileAniHidden {
     display: none;
   }
 
-  .navBar .whiteBox .mobileButton {
-    display: block;
-  }
 
-  .navBar .whiteBox > button > i {
-    font-size: 2rem;
-  }
+  
 }
-/* navBar_end */

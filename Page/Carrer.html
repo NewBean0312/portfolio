@@ -33,13 +33,11 @@
     <title>YuBeen's Portfolio</title>
   </head>
   <body>
-    <!-- cursor_Start -->
+    <!-- cursorArea -->
     <div class="mouseCursor">
       <i class="fa-solid fa-arrow-pointer"></i>
     </div>
-    <!-- cursor_End -->
-
-    <!-- navBar start -->
+    <!-- navBar area -->
     <nav class="navBar">
       <div class="boxGroup">
         <div class="whiteBox"></div>
@@ -74,15 +72,15 @@
         <div class="whiteBox"></div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button type="button" onClick="location.href='../index.html'">
-            <div class="buttonText">Main</div>
+          <button class="pcBtn" onClick="location.href='../index.html'">
+            <div class="btnText">main</div>
             <i class="fa-solid fa-m"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button type="button" onClick="location.href='./About.html'">
-            <div class="buttonText">About</div>
+          <button class="pcBtn" onClick="location.href='./about.html'">
+            <div class="btnText">about</div>
             <i class="fa-solid fa-a"></i>
           </button>
         </div>
@@ -95,81 +93,51 @@
       </div>
       <div class="boxGroup">
         <div class="whiteBox">
-          <button type="button" onClick="location.href='./Carrer.html'">
-            <div class="buttonText carrerFont">Carrer</div>
+          <button class="pcBtn" onClick="location.href='./carrer.html'">
+            <div class="btnText">carrer</div>
             <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileButton 실행 -->
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='../index.html'"
-          >
-            <div class="buttonText">Main</div>
-            <i class="fa-brands fa-itunes-note"></i>
+          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileBtn 실행 -->
+          <button class="mobileBtn" onClick="location.href='../index.html'">
+            <div class="mobileBtnText">main</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./About.html'"
-          >
-            <div class="buttonText">About</div>
-            <i class="fa-solid fa-a"></i>
+          <button class="mobileBtn" onClick="location.href='./about.html'">
+            <div class="mobileBtnText">about</div>
           </button>
-          <button type="button" onClick="location.href='./Skills.html'">
-            <div class="buttonText">Skills</div>
+          <button class="pcBtn" onClick="location.href='./skills.html'">
+            <div class="btnText">skills</div>
             <i class="fa-solid fa-s"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Carrer.html'"
-          >
-            <div class="buttonText carrerFont">Carrer</div>
-            <i class="fa-solid fa-c"></i>
+          <button class="mobileBtn" onClick="location.href='./carrer.html'">
+            <div class="mobileBtnText">carrer</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Skills.html'"
-          >
-            <div class="buttonText">Skills</div>
-            <i class="fa-solid fa-s"></i>
+          <button class="mobileBtn" onClick="location.href='./skills.html'">
+            <div class="mobileBtnText">skills</div>
           </button>
-          <button type="button" onClick="location.href='./Work.html'">
-            <div class="buttonText">Work</div>
+          <button class="pcBtn" onClick="location.href='./work.html'">
+            <div class="btnText">work</div>
             <i class="fa-solid fa-w"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Work.html'"
-          >
-            <div class="buttonText">Work</div>
-            <i class="fa-solid fa-w"></i>
+          <button class="mobileBtn" onClick="location.href='./work.html'">
+            <div class="mobileBtnText">work</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Link.html'"
-          >
-            <div class="buttonText">Link</div>
-            <i class="fa-solid fa-l"></i>
+          <button class="mobileBtn" onClick="location.href='./link.html'">
+            <div class="mobileBtnText">link</div>
           </button>
-          <button type="button" onClick="location.href='./Link.html'">
-            <div class="buttonText">Link</div>
+          <button class="pcBtn" onClick="location.href='./link.html'">
+            <div class="btnText">link</div>
             <i class="fa-solid fa-l"></i>
           </button>
         </div>
@@ -194,18 +162,16 @@
         <div class="blackBox"></div>
       </div>
     </nav>
-    <!-- navBar end -->
-
-    <!-- content_start -->
-    <section class="carrerSection">
+    <!-- carrerArea -->
+    <main class="carrerMain main">
       <header class="carrerHeader">
         <h1><i>Carrer</i></h1>
       </header>
-      <article class="carrerArticle">
-        <div class="whiteBox">
+      <section class="carrerSection">
+        <article class="whiteBox">
           <div class="contentBox">
             <div class="img">
-              <img src="../img/Hanbat_Logo.jpg" alt="Hanbat_Logo" />
+              <img src="../img/logoFolder/hanbatLogo.jpg" alt="hanbatLogo_img" />
             </div>
             <div class="content">
               <h2><i>2017 .03</i></h2>
@@ -215,11 +181,11 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="blackBox">
+        </article>
+        <article class="blackBox">
           <div class="contentBox">
             <div class="img">
-              <img src="../img/Computer_Logo.jpeg" alt="Computer_img" />
+              <img src="../img/logoFolder/computerLogo.jpeg" alt="computerLogo_img" />
             </div>
             <div class="content">
               <h2><i>2020 .06</i></h2>
@@ -229,11 +195,11 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="whiteBox">
+        </article>
+        <article class="whiteBox">
           <div class="contentBox">
             <div class="img">
-              <img src="../img/Codemate_1.png" alt="Codemate_1" />
+              <img src="../img/logoFolder/codemate1.png" alt="codemate1_img" />
             </div>
             <div class="content">
               <h2><i>2022 .01</i></h2>
@@ -243,11 +209,11 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="blackBox">
+        </article>
+        <article class="blackBox">
           <div class="contentBox">
             <div class="img">
-              <img src="../img/Codemate_2.png" alt="Codemate_2" />
+              <img src="../img/logoFolder/codemate2.png" alt="codemate2_img" />
             </div>
             <div class="content">
               <h2><i>2022 .02</i></h2>
@@ -257,22 +223,22 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="whiteBox">
+        </article>
+        <article class="whiteBox">
           <div class="contentBox">
             <div class="img">
-              <img src="../img/Computer_Logo.jpeg" alt="Computer_Logo" />
+              <img src="../img/logoFolder/computerLogo.jpeg" alt="computerLogo_img" />
             </div>
             <div class="content">
               <h2><i>2022 .03</i></h2>
               <p>정보처리기사 필기 취득</p>
             </div>
           </div>
-        </div>
-        <div class="blackBox">
+        </article>
+        <article class="blackBox">
           <div class="contentBox">
             <div class="img">
-              <img src="../img/Hanbat_Logo.jpg" alt="Hanbat_Logo" />
+              <img src="../img/logoFolder/hanbatLogo.jpg" alt="hanbatLogo_img" />
             </div>
             <div class="content">
               <h2><i>2023 .02</i></h2>
@@ -282,13 +248,13 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="whiteBox">
+        </article>
+        <article class="whiteBox">
           <div class="contentBox">
             <div class="img">
               <img
-                src="../img/KoreaAcademy_Logo.jfif"
-                alt="KoreaAcademy_Logo"
+                src="../img/logoFolder/koreaAcademyLogo.jfif"
+                alt="koreaAcademyLogo_img"
               />
             </div>
             <div class="content">
@@ -299,9 +265,24 @@
               </p>
             </div>
           </div>
-        </div>
-      </article>
-    </section>
-    <!-- content_end -->
+        </article>
+        <article class="whiteBox">
+          <div class="contentBox">
+            <div class="img">
+              <img
+                src="../img/logoFolder/computerLogo.jpeg"
+                alt="koreaAcademyLogo_img"
+              />
+            </div>
+            <div class="content">
+              <h2><i>2023 .06</i></h2>
+              <p>정보처리기사 실기 취득</p>
+            </div>
+          </div>
+        </article>
+        <article class="blackBox">
+        </article>
+      </section>
+    </main>
   </body>
 </html>

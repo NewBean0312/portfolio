@@ -6,6 +6,7 @@ $(".slide-show").slick({
   fade: true,
   asNavFor: ".slider-nav",
 });
+
 $(".slider-nav").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -26,4 +27,18 @@ document.addEventListener("mousemove", (e) => {
   const mouseY = e.clientY;
   mouseCursor1.style.left = mouseX + 15 + "px";
   mouseCursor1.style.top = mouseY + 15 + "px";
+});
+
+// 화면 전환 이벤트
+jQuery(function ($) {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+  $("a.transition").click(function (event) {
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(1000, redirectPage);
+  });
+  function redirectPage() {
+    window.location = linkLocation;
+  }
 });
