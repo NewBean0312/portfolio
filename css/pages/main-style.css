@@ -1,0 +1,10 @@
+@import "../base/reset.css";
+@import "../base/normalize.css";
+@import "../base/color.css";
+
+@import "../components/screen-tran.css";
+@import "../components/snow-box.css";
+@import "../components/keyboard-wave.css";
+@import "../components/main.css";
+
+@import "../responsive/res-main.css";

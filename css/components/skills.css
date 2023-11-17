@@ -1,0 +1,114 @@
+/* .skills-main area */
+.skills-main {
+  position: relative;
+  width: 100%;
+  min-width: 500px;
+  height: 100%;
+  margin-top: 120px;
+  user-select: none;
+}
+
+/* skills-header area */
+.skills-main > .skills-header {
+  width: 35%;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-border1);
+  text-align: center;
+}
+
+.skills-header > h1 {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-text1);
+}
+
+.skills-header > div {
+  width: 100%;
+  height: 4px;
+  border-top: 3px solid var(--color-border1);
+}
+
+/* skills-section-area */
+.skills-main .skills-section {
+  width: 95%;
+  height: 100%;
+  margin: 50px auto;
+}
+
+.skills-section > .note-box {
+  display: flex;
+  width: 95%;
+  height: 160px;
+  border-top: 2px solid var(--color-border1);
+  margin-top: 3.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-section .note-box-row {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-right: 7px solid var(--color-border1);
+}
+
+.skills-section .note-box-col {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  border-bottom: 2px solid var(--color-border1);
+}
+
+.skills-section .note-box-title {
+  color: var(--color-text1);
+  font-weight: bold;
+  font-size: 1.1rem;
+  transform: translateY(-25px);
+}
+
+.skills-section .mobile-note-box-title {
+  display: none;
+}
+
+/* logo-img area */
+.note-box-row > .logo-box {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.skills-section .logo-img {
+  display: flex;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.logo-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.note-box .note-line {
+  border-right: 6px solid var(--color-border1);
+}
+
+.last-note-line .note-box-row:nth-child(4) {
+  border-right: 12px solid var(--color-border1);
+}
+
+.last-note-line .note-box-row:nth-child(4)::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 160px;
+  background-color: var(--color-border1);
+  transform: translateX(-10px);
+  content: '';
+}
+

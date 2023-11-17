@@ -1,0 +1,59 @@
+@keyframes keyboard-wave {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: -40px;
+  }
+}
+
+.keyboard-wave {
+  -webkit-animation-name: keyboard-wave;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: running;
+  animation-name: keyboard-wave;
+  animation-duration: 3.5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: running;
+}
+
+/* box-group-1 */
+.keyboard-wave:nth-of-type(1) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.keyboard-wave:nth-of-type(2) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.keyboard-wave:nth-of-type(3) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.keyboard-wave:nth-of-type(4) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.keyboard-wave:nth-of-type(5) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.keyboard-wave:nth-of-type(6) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.keyboard-wave:nth-of-type(7) {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+

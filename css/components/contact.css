@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "DNFForgedBladeLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeNormal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf")
+    format("opentype");
+}
+
+/* contact-main area */
+.contact-main {
+  display: flex;
+  width: 100vw;
+  min-width: 500px;
+  height: 800px;
+  margin-top: 100px;
+  user-select: none;
+}
+
+/* contact-header area */
+.contact-main > .contact-header {
+  width: 30vw;
+  height: 100%;
+  text-align: center;
+}
+
+.contact-main > .contact-header > h1 {
+  padding-top: 40px;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-text1);
+}
+
+.contact-main > .contact-header > p {
+  line-height: 30px;
+  font-family: "DNFForgedBladeNormal";
+  font-size: 20px;
+  color: var(--color-text1);
+}
+/* // contact-header area */
+
+/* contact-section area */
+.contact-main > .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 700px;
+}
+
+/* form area */
+.contact-section > form {
+  width: 60vw;
+  height: 500px;
+  border-radius: 30px;
+  border: 5px solid var(--color-border1);
+}
+
+.contact-section fieldset > div {
+  width: 55vw;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-bottom: 3px solid var(--color-border1);
+}
+
+.contact-section fieldset > div:last-child {
+  border: none;
+}
+
+.contact-section fieldset > div > label {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--color-text2);
+}
+
+.contact-section fieldset > .content-box {
+  display: flex;
+  height: 200px;
+}
+
+.contact-section fieldset > .content-box > textarea {
+  margin-left: 10px;
+  width: 40vw;
+  height: 180px;
+  resize: none;
+}
+
+.contact-section fieldset .btn-box {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-box > .btn-send {
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--color-bg2);
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--color-text5);
+  cursor: pointer;
+}
+/* //contact-section area */
+/* // contact-main area */
+
+/* complete-modal area */
+.complete-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  bottom: -150px;
+  width: 300px;
+  height: 60px;
+  border-radius: 25px;
+  background-color: var(--color-bg2);
+  transition: transform 1s;
+  user-select: none;
+}
+
+.complete-modal.complete {
+  transform: translateY(-180px);
+}
+
+.complete-modal > i,
+.complete-modal > p {
+  font-size: 20px;
+  color: var(--color-text5);
+}
+
+.complete-modal > p {
+  font-family: "DNFForgedBladeBold";
+  padding-left: 10px;
+}
+/* // complete-modal area */

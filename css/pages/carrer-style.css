@@ -1,0 +1,10 @@
+@import "../base/reset.css";
+@import "../base/normalize.css";
+@import "../base/color.css";
+
+@import "../components/screen-tran.css";
+@import "../components/menu-bar.css";
+@import "../components/carrer.css";
+
+@import "../responsive/res-menu-bar.css";
+@import "../responsive/res-carrer.css";
