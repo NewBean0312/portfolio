@@ -24,10 +24,13 @@ floatingCircle(".html-logo");
 floatingCircle(".css-logo");
 floatingCircle(".js-logo");
 floatingCircle(".react-logo");
+floatingCircle(".next-logo");
 floatingCircle(".sass-logo");
 floatingCircle(".dbms-logo");
 floatingCircle(".linux-logo");
 floatingCircle(".git-logo");
 floatingCircle(".github-logo");
-floatingCircle(".r-logo");
+floatingCircle(".figma-logo");
+floatingCircle(".express-logo");
+floatingCircle(".postman-logo");
 

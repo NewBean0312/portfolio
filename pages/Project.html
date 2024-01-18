@@ -122,9 +122,7 @@
             class="mobile-btn"
             onClick="location.href='../pages/Project.html'"
           >
-            <div class="btn-nav">
-              Project
-            </div>
+            <div class="btn-nav">Project</div>
           </button>
         </div>
         <div class="white-box">
@@ -132,9 +130,7 @@
             class="mobile-btn"
             onClick="location.href='../pages/Contact.html'"
           >
-            <div class="btn-nav">
-              Contact
-            </div>
+            <div class="btn-nav">Contact</div>
           </button>
           <button
             class="pc-btn"
@@ -171,6 +167,7 @@
 
     <!-- main area -->
     <main class="project-main">
+      <!-- project-header area -->
       <header class="project-header">
         <h1>Project</h1>
         <p>
@@ -178,6 +175,7 @@
           마우스 드래그로 넘기기~
         </p>
       </header>
+      <!-- // project-header area -->
 
       <!-- project-section area-->
       <section class="project-section">
@@ -221,6 +219,18 @@
                   <img
                     src="../images/project-img/website-img/PyeongChang2018-img.png"
                     onclick="pyeongChang2018PopupOpen()"
+                  />
+                </swiper-slide>
+                <swiper-slide>
+                  <img
+                    class="lp-record"
+                    src="../images/project-img/lp-record/lp-record-8.png"
+                    alt="lp-record-8"
+                  />
+                  <img
+                    src="../images/project-img/website-img/makeup-shopping-mall-img.png"
+                    alt="makeup-shopping-mall-img"
+                    onclick="makeupShoppingMallPopupOpen()"
                   />
                 </swiper-slide>
                 <swiper-slide>
@@ -292,6 +302,18 @@
                     src="../images/project-img/website-img/order-page-img.png"
                     alt="order-page-img"
                     onclick="orderPagePopupOpen()"
+                  />
+                </swiper-slide>
+                <swiper-slide>
+                  <img
+                    class="lp-record"
+                    src="../images/project-img/lp-record/lp-record-7.png"
+                    alt="lp-record-7"
+                  />
+                  <img
+                    src="../images/project-img/website-img/pokemon-dex-img.png"
+                    alt="pokemon-dex-img"
+                    onclick="pokemonDexPopupOpen()"
                   />
                 </swiper-slide>
               </swiper-container>
@@ -547,7 +569,7 @@
                   <br /><br />
                   이 웹사이트는 <span>반응형 디자인</span>을 공부하기 위해
                   제작하였습니다.<br />
-                  개인 프로젝트로 제작하였습니다.
+                  이 프로젝트는 <span>개인 프로젝트</span>입니다.
                 </p>
                 <button
                   class="view-btn"
@@ -596,6 +618,147 @@
       </div>
     </section>
     <!-- // PyeongChang2018 section area -->
+
+    <!-- makeup-shopping-mall section area -->
+    <section class="project-popup-section hidden" id="makeupShoppingMall">
+      <div class="dimmed-layer"></div>
+      <div class="project-popup-wrapper">
+        <div class="popup-container">
+          <div class="popup-header">
+            <button
+              class="close-btn"
+              onclick="makeupShoppingMallPopupClose()"
+            ></button>
+          </div>
+          <div class="popup-box">
+            <div class="popup-show">
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="4000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/makeup-shopping-mall-img.png"
+                      alt="makeup-shopping-mall-img"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/makeup-shopping-mall-img-2.png"
+                      alt="makeup-shopping-mall-img-2"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/makeup-shopping-mall-img-3.png"
+                      alt="makeup-shopping-mall-img-3"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/makeup-shopping-mall-img-4.png"
+                      alt="makeup-shopping-mall-img-4"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/makeup-shopping-mall-img-5.png"
+                      alt="makeup-shopping-mall-img-5"
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="popup-content">
+              <div class="popup-content-title">
+                <h2>화장품 쇼핑몰 사이트</h2>
+              </div>
+              <div class="popup-content-desc">
+                <p>
+                  <span>Next.js</span>로 작업한 화장품 쇼핑몰 사이트 입니다.<br />
+                  <span>Next.js</span>를 공부하며, 이를 통해 홈페이지를
+                  제작해보고 싶어서 작업하게 되었습니다.<br />
+                  <span>Dynamic Routes</span>로 리스트를 하나의 페이지로
+                  관리하였고,<br />
+                  <span>환경 변수</span>를 통해 개발 환경과 실제 제품 환경을
+                  분리하였습니다.<br />
+                  <span>API Routes</span>를 통해 로그인과 로그아웃도
+                  구현하였습니다.<br />
+                  이 프로젝트는 <span>개인 프로젝트</span>입니다.
+                  <span>vercel</span>을 통해 배포하였습니다.
+                </p>
+                <button
+                  class="view-btn"
+                  onclick="window.open('https://makeup-shopping-mall-website.vercel.app/')"
+                >
+                  More View
+                </button>
+              </div>
+              <div class="popup-content-function">
+                <ul class="function-list">
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Function
+                    </div>
+                    <div>
+                      메인 페이지, 상세 페이지, About 페이지, Contact us 페이지,
+                      로그인 및 로그아웃 페이지
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      GitHub
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/NewBean0312/makeup-shopping-mall-website"
+                        target="_blank"
+                        >github.com/NewBean0312/makeup-shopping-mall-website</a
+                      >
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Skills
+                    </div>
+                    <div>React, Next.js, vercel</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // makeup-shopping-mall section area -->
 
     <!-- Dokdo section area -->
     <section class="project-popup-section hidden" id="Dokdo">
@@ -663,7 +826,7 @@
                     <img
                       class="popup-mobile-img"
                       src="../images/project-img/website-img/Dokdo-img-5.png"
-                      alt="Dokdo-img-5  "
+                      alt="Dokdo-img-5"
                     />
                   </div>
                 </swiper-slide>
@@ -683,7 +846,7 @@
                   이 웹사이트는 <span>반응형 디자인</span>과
                   <span>기초적인 사이트 구조</span>를 공부하기 위해
                   제작하였습니다.<br />
-                  개인 프로젝트로 제작하였습니다.
+                  이 프로젝트는 <span>개인 프로젝트</span>입니다.
                 </p>
                 <button
                   class="view-btn"
@@ -975,7 +1138,7 @@
                       <i class="fa-solid fa-check"></i>
                       Skills
                     </div>
-                    <div>React, JavaScript</div>
+                    <div>React</div>
                   </li>
                 </ul>
               </div>
@@ -1112,6 +1275,121 @@
       </div>
     </section>
     <!-- // orderPage section area -->
+
+    <!-- pokemon section area -->
+    <section class="project-popup-section hidden" id="pokemonDex">
+      <div class="dimmed-layer"></div>
+      <div class="project-popup-wrapper">
+        <div class="popup-container">
+          <div class="popup-header">
+            <button class="close-btn" onclick="pokemonDexPopupClose()"></button>
+          </div>
+          <div class="popup-box">
+            <div class="popup-show">
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="4000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/pokemon-dex-img.png"
+                      alt="order-page-img"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>Mobile Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/pokemon-dex-img-2.png"
+                      alt="order-page-img-2"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>Mobile Version</h3>
+                    <img
+                      class="popup-mobile-img"
+                      src="../images/project-img/website-img/pokemon-dex-img-3.png"
+                      alt="order-page-img-3"
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="popup-content">
+              <div class="popup-content-title">
+                <h2>포켓몬 도감</h2>
+              </div>
+              <div class="popup-content-desc">
+                <p>
+                  <span>PokeAPI</span>를 이용한
+                  <span>포켓몬 도감</span>입니다.<br />
+                  <span>React로 PokeAPI</span>를 받아와서 작업하였습니다.<br />
+                  이 프로젝트에서 <span>API의 활용방법</span>을 알았으며,<br />
+                  React의 <span>Router</span>를 이용하여, 페이지를
+                  구분하였습니다.<br />
+                  <span>react-infinite-scroll-component</span>을 사용하여,<br />
+                  리스트를 불러올 수 있게 작업하였습니다.
+                  <br />
+                  <br />
+                  이 프로젝트는 <span>개인 프로젝트</span>입니다.
+                </p>
+                <button
+                  class="view-btn"
+                  onclick="window.open('https://newbean0312.github.io/pokemon-dex/')"
+                >
+                  More View
+                </button>
+              </div>
+              <div class="popup-content-function">
+                <ul class="function-list">
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Function
+                    </div>
+                    <div>메인 페이지, 상세페이지</div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      GitHub
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/NewBean0312/pokemon-dex-code"
+                        target="_blank"
+                        >github.com/NewBean0312/pokemon-dex-code</a
+                      >
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Skills
+                    </div>
+                    <div>React, PokeAPI</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // pokemon section area -->
     <!-- // project-popup-section area-->
 
     <!-- js script -->
