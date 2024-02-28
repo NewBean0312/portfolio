@@ -28,7 +28,12 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
-  min-width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+  }
 }
 
 /**
