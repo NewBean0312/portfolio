@@ -1,3 +1,5 @@
+@import url(../base/font.css);
+
 /* header area */
 .main-header {
   display: flex;
@@ -28,8 +30,7 @@
 .main-text {
   margin-top: 50px;
   font-size: 25px;
-  font-weight: 400;
-  font-style: italic;
+  font-family: "DNFForgedBladeNormal";
   color: var(--color-text1);
   text-align: center;
   user-select: none;
@@ -73,7 +74,7 @@
   position: absolute;
   z-index: 1;
   width: 9%;
-  height: 200px;
+  height: 150px;
   background-color: var(--color-bg1);
   border: none;
   bottom: 150px;
