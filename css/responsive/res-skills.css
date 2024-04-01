@@ -1,4 +1,7 @@
 @media screen and (max-width: 500px) {
+  .skills-header > span {
+    display: none;
+  }
   .skills-section > .note-box {
     margin-top: 8%;
   }
@@ -26,9 +29,25 @@
   }
 
   .skills-popup-section > .skills-popup-wrapper {
-    width: 80%;
+    width: 90%;
   }
   
+  .skill-show > .popup-img-box {
+    margin-left: 0;
+  }
+
+  .skills-popup-wrapper > .popup-container  {
+    width: 90%;
+  }
+
+  .skill-content > .popup-desc {
+    overflow-y: auto;
+  }
+
+  .popup-desc > p {
+    width: 90%;
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {

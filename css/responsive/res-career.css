@@ -1,0 +1,95 @@
+@media screen and (max-width: 500px) {
+  .content-box > .img-area {
+    margin-right: 0;
+  }
+
+  .desc-area p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .career-main {
+    display: block;
+    margin-top: 120px;
+  }
+
+  .career-header > p {
+    margin-bottom: 20px;
+  }
+
+  .content-box > .img {
+    flex: 0.3;
+    margin: 20px 87.5px;
+    transition: margin 1s;
+  }
+
+  .career-main .career-section {
+    height: 78vh;
+  }
+
+  .content > p {
+    width: 32%;
+    margin-top: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .career-main .career-section {
+    position: relative;
+    border: 6px solid var(--color-border1);
+  }
+
+  .career-section .career-list {
+    height: 1700px;
+  }
+
+  .career-section .career-item {
+    height: 200px;
+  }
+
+  .white-box > .content-box {
+    border-top: 0;
+  }
+
+  .career-section .black-box {
+    position: relative;
+    width: 100%;
+  }
+
+  /* parallelgram-box area */
+  .career-section .parallelgram-box {
+    display: none;
+  }
+
+  /* 검은 건반 위치조정 */
+  .career-section .black-box:nth-child(2) {
+    top: 0;
+  }
+
+  .career-section .black-box:nth-child(4) {
+    top: 0;
+  }
+
+  .career-section .black-box:nth-child(6) {
+    top: 0;
+  }
+
+  .career-section .black-box:nth-child(9) {
+    display: none;
+  }
+
+  .career-section .white-box:nth-child(8) {
+    background-color: #000;
+    border: none;
+  }
+
+  .career-section .white-box:nth-child(8) h2 {
+    color: #f8efce;
+  }
+
+  .career-section .white-box:nth-child(8) p {
+    color: #fff;
+  }
+}
