@@ -44,13 +44,11 @@ body {
 /* menu-bar area */
 .menu-bar {
   display: flex;
-  bottom: -15px;
+  bottom: 0;
   position: absolute;
   width: 100vw;
   height: 280px;
-  border: 3px solid var(--color-bg1);
   user-select: none;
-  transition: height 0.5s;
 }
 
 .menu-bar > .box-group {
