@@ -24,10 +24,3 @@ function SecondTyping() {
   }
 }
 setInterval(SecondTyping, 100);
-
-// 피아노 건반 사운드 이벤트
-function playSound(soundFile) {
-  var audio = document.getElementById("audio");
-  audio.src = soundFile;
-  audio.play();
-}
